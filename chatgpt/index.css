@@ -11,16 +11,93 @@
 body{
     background-color: rgb(3,0,31);
     color:white;
-    width:100vw;
-    height:100vh;
 }
+   
 .app{
-    width:100%;
+    min-width:100vw;
+    min-height:100vh;
+
     display:flex;
 }
 
 .sidebar{
-    width:25%;
-    display:flex;
-    flex-direction: column;
+  
+   flex:3;
+    border-right:1px solid rgba(221, 210, 210, 0.89)
 }
+.main{
+    flex:9;}
+    .logo{
+        margin-right: 1rem;
+    }
+
+    .upper-side{
+        padding:2rem;
+        padding-bottom:12rem;
+        border-bottom: 1px solid rgba(221, 210, 210, 0.89);
+    }
+
+    .uppersidetop{
+        display:flex;
+        align-items: center;
+        font-size: 1.5rem;
+        
+        margin-bottom:10px;
+    }
+
+
+
+
+    .lower-side{
+        padding:2rem;
+        display:flex;
+        flex-direction: column;
+        gap:15px
+;    }
+
+.listItems{
+    display:flex;
+    align-items: center;
+    gap:8px
+}
+
+.midBtn{
+    background-color: #00aaff;
+    border:none;
+    color:white;
+    padding:1.5rem;
+    font-size: 1rem;
+    height:10px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    width:12rem;
+    gap:1rem;
+    margin-bottom: 1.5rem;
+    border-radius:0.2rem;
+    margin:0 auto
+   
+
+}
+
+.query{
+    display:flex;
+    align-items: center;
+    padding:0.8rem;
+    width:12rem;
+    background: transparent;
+    color:white;
+    border-radius: 0.2rem;
+    border:1px solid  rgba(98,98,98,1);
+    gap:0.4rem;
+    margin-top:1.3rem;
+    
+
+
+}
+
+.addBtn{
+    height:1rem;
+
+}
+
