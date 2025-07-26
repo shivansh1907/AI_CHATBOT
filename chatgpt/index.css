@@ -26,7 +26,15 @@ body{
     border-right:1px solid rgba(221, 210, 210, 0.89)
 }
 .main{
-    flex:9;}
+    flex:9;
+    padding:2rem 2rem;
+
+    min-height:calc(100vh-14rem);
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+
+}
     .logo{
         margin-right: 1rem;
     }
@@ -100,4 +108,62 @@ body{
     height:1rem;
 
 }
+.footer{
+    margin-top: auto;
+    width:95%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+ 
 
+}
+.inp{
+    width:100%;
+    padding:0.5rem;
+    background: rgba(28,30,58,1);
+       margin-bottom: 0.5rem;
+}
+.inp>input{
+    width:calc(100% - 2.5rem);
+    padding:0.5rem;
+    background: transparent;
+    outline:none;
+    border:none;
+    color:white
+
+}
+.chats{
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    width:100%;
+    max-width:70rem;
+    height:calc(100vh-10rem);
+
+}
+.chat{
+    margin:2rem;
+    padding:1rem 2rem;
+    font-size:1.2rem;
+    display:flex;
+    align-items: flex-start;
+    text-align:justify
+    /* justify-content:flex-end; */
+
+}
+
+.img{
+    object-fit: cover;
+    width:2rem;
+    margin-right:1rem;
+    border-radius: 0.2rem;
+
+}
+
+.bot{
+    background: rgba(28,30,58,1);
+    color:white;
+    border-radius: 0.3rem;
+
+}
